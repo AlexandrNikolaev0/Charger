@@ -8,9 +8,10 @@ byte DB[4] = {50, 51, 52, 53};
 
 #define FASTADC 1
 
-int cellsNumber = 2;
-float current = 0.7;
-float voltage = 8.04;
+//These 4 parameters set mode of operation
+int cellsNumber = 2; //Sets the number battery cells.
+float current = 0.7; //Sets the current value
+float voltage = 8.04; //Sets the voltage value
 char processMode = 'D';//C - charge, B - balance, F - fast charge, S - storage, D - discharge.
 
 int pin0 = 2;//StopButton
